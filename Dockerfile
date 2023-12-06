@@ -2,4 +2,5 @@
 FROM tomcat:latest
 
 # Copy the WAR file to the webapps directory of Tomcat
-COPY  addressbook-2.0.war /var/lib/tomcat9/webapps/
+COPY /target/addressbook-2.0 /usr/local/tomcat/webapps/
+
